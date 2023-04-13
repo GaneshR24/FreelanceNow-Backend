@@ -7,7 +7,7 @@ const db = require("./db/db");
 db();
 
 app.use(express.json());
-app.use(cors({ origin: "https://freelancenow.netlify.app/" }));
+app.use(cors({ origin: "https://freelancenow.netlify.app" }));
 
 const usersRoute = require("./routes/usersRoute");
 const projectRoute = require("./routes/projectRoute");
